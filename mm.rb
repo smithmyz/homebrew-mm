@@ -34,7 +34,6 @@ class Mm < Formula
     bin.install "makeyoutube"
     bin.install "mmfunctions"
     bin.install "mmhelp"
-    bin.install "mmvariables"
     bin.install "paperingest"
     bin.install "quickcompare"
     bin.install "removeDSStore"
