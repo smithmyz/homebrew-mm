@@ -32,6 +32,7 @@ class Mm < Formula
     bin.install "makemetadata"
     bin.install "makepodcast"
     bin.install "makeyoutube"
+    bin.install "mmconfig"
     bin.install "mmfunctions"
     bin.install "mmhelp"
     bin.install "paperingest"
