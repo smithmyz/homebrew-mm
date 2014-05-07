@@ -16,7 +16,6 @@ class Mm < Formula
   depends_on 'curl'
   depends_on 'exiftool'
   depends_on 'flac'
-  depends_on 'gnuplot'
   depends_on 'md5deep'
   depends_on 'xmlstarlet'
 
