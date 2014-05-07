@@ -2,6 +2,9 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/dericed/mediamicroservices'
+  url 'http://github.com/dericed/mediamicroservices/archive/mm_v0.1.tar.gz'
+  sha256 'bf493668ebbc48546c4b2c0fb00a47ec50974a1b421aed584afc7dd82c8f0c43'
+  
   head 'git://github.com/dericed/mediamicroservices.git'
 
   depends_on 'ffmpeg' => 'with-ffplay'
