@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/dericed/mediamicroservices'
-  url 'http://github.com/dericed/mediamicroservices/archive/mm_v0.1.tar.gz'
-  sha256 'bf493668ebbc48546c4b2c0fb00a47ec50974a1b421aed584afc7dd82c8f0c43'
+  url 'http://github.com/dericed/mediamicroservices/archive/mm_v0.2.zip'
+  sha256 'af9a27461bca264195e4ae9550b946efe8960b4bc5db692d17c3dd512a1bc456'
   
   head 'git://github.com/dericed/mediamicroservices.git'
 
@@ -18,10 +18,12 @@ class Mm < Formula
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'xmlstarlet'
+  depends_on 'pdfjam'
 
   def install
     bin.install "barcodeinterpret"
     bin.install "blackatends"
+    bin.install "checksum2filemaker"
     bin.install "checksumpackage"
     bin.install "fix_left2stereo"
     bin.install "fix_rewrap"
@@ -32,7 +34,9 @@ class Mm < Formula
     bin.install "makeframes"
     bin.install "makelossless"
     bin.install "makemetadata"
+    bin.install "makepdf"
     bin.install "makepodcast"
+    bin.install "makeprores"
     bin.install "makeyoutube"
     bin.install "mmconfig"
     bin.install "mmfunctions"
@@ -40,6 +44,7 @@ class Mm < Formula
     bin.install "paperingest"
     bin.install "quickcompare"
     bin.install "removeDSStore"
+    bin.install "restructureForCompliance.sh"
     bin.install "uploadomneon"
     bin.install "xdcamingest"
   end
