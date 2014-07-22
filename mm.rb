@@ -7,6 +7,7 @@ class Mm < Formula
   
   head 'git://github.com/dericed/mediamicroservices.git'
 
+  depends_on 'sdl'
   depends_on 'ffmpeg' => 'with-ffplay'
   depends_on 'mediainfo'
   depends_on 'dvdauthor'
