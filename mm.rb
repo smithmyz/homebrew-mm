@@ -18,7 +18,6 @@ class Mm < Formula
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'xmlstarlet'
-  depends_on 'pdfjam'
 
   def install
     bin.install "barcodeinterpret"
