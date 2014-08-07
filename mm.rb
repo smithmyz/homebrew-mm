@@ -25,6 +25,7 @@ class Mm < Formula
     bin.install "blackatends"
     bin.install "checksum2filemaker"
     bin.install "checksumpackage"
+    bin.install "finishpackage"
     bin.install "fix_left2stereo"
     bin.install "fix_rewrap"
     bin.install "fix_volume"
