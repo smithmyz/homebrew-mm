@@ -45,7 +45,7 @@ class Mm < Formula
     bin.install "paperingest"
     bin.install "quickcompare"
     bin.install "removeDSStore"
-    bin.install "restructureForCompliance.sh"
+    bin.install "restructureForCompliance"
     bin.install "uploadomneon"
     bin.install "xdcamingest"
   end
