@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/dericed/mediamicroservices'
-  url 'http://github.com/dericed/mediamicroservices/archive/mm_v0.4.8.zip'
-  sha256 '35e0ba0f90bab8af386d6e7cb8cca076d36bf8bb67d8053f59393587faa30781'
+  url 'http://github.com/dericed/mediamicroservices/archive/mm_v0.4.9.zip'
+  sha256 'c1f0a56728ca8915494b607a8ee730709508a902642a51348363dc4ec6b3646f'
   
   head 'git://github.com/dericed/mediamicroservices.git'
 
@@ -19,6 +19,7 @@ class Mm < Formula
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'xmlstarlet'
+  depends_on 'tesseract' => 'with-devel'
 
   def install
     bin.install "barcodeinterpret"
