@@ -19,7 +19,6 @@ class Mm < Formula
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'xmlstarlet'
-  depends_on 'tesseract' => 'with-devel'
 
   def install
     bin.install "barcodeinterpret"
@@ -42,7 +41,6 @@ class Mm < Formula
     bin.install "makeyoutube"
     bin.install "mmconfig"
     bin.install "mmfunctions"
-    bin.install "mmhelp"
     bin.install "paperingest"
     bin.install "quickcompare"
     bin.install "removeDSStore"
