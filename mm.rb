@@ -17,6 +17,7 @@ class Mm < Formula
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'mediainfo'
+  depends_on 'normalize'
   depends_on 'sdl'
   depends_on 'xmlstarlet'
 
@@ -35,6 +36,7 @@ class Mm < Formula
     bin.install "makeframes"
     bin.install "makelossless"
     bin.install "makemetadata"
+    bin.install "makemp3"
     bin.install "makepdf"
     bin.install "makepodcast"
     bin.install "makeprores"
