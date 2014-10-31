@@ -7,17 +7,17 @@ class Mm < Formula
   
   head 'git://github.com/dericed/mediamicroservices.git'
 
-  depends_on 'sdl'
-  depends_on 'ffmpeg' => 'with-ffplay'
-  depends_on 'mediainfo'
-  depends_on 'dvdauthor'
   depends_on 'cdrtools'
-  depends_on 'ffmbc'
   depends_on 'cowsay'
   depends_on 'curl'
+  depends_on 'dvdauthor'
   depends_on 'exiftool'
+  depends_on 'ffmbc'
+  depends_on 'ffmpeg' => 'with-ffplay'
   depends_on 'flac'
   depends_on 'md5deep'
+  depends_on 'mediainfo'
+  depends_on 'sdl'
   depends_on 'xmlstarlet'
 
   def install
