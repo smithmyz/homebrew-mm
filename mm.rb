@@ -19,6 +19,7 @@ class Mm < Formula
   depends_on 'mediainfo'
   depends_on 'normalize'
   depends_on 'sdl'
+  depends_on 'tesseract' => 'devel'
   depends_on 'xmlstarlet'
 
   def install
