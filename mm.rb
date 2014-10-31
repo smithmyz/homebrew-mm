@@ -13,7 +13,7 @@ class Mm < Formula
   depends_on 'dvdauthor'
   depends_on 'exiftool'
   depends_on 'ffmbc'
-  depends_on 'ffmpeg' => 'with-ffplay'
+  depends_on 'ffmpeg' => 'with-ffplay', 'with-openjpeg', 'with-libass', 'with-freetype'
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'mediainfo'
