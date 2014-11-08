@@ -16,7 +16,6 @@ class Mm < Formula
   depends_on 'md5deep'
   depends_on 'mediainfo'
   depends_on 'normalize'
-  depends_on 'sdl'
   depends_on 'xmlstarlet'
 
   def install
