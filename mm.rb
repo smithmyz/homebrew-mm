@@ -44,6 +44,7 @@ class Mm < Formula
     bin.install "quickcompare"
     bin.install "removeDSStore"
     bin.install "restructureForCompliance"
+    bin.install "tesseract.conf"
     bin.install "uploadomneon"
     bin.install "xdcamingest"
   end
