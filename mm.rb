@@ -8,7 +8,6 @@ class Mm < Formula
   head 'git://github.com/dericed/mediamicroservices.git'
 
   depends_on 'cowsay'
-  depends_on 'curl'
   depends_on 'dvdauthor'
   depends_on 'exiftool'
   depends_on 'ffmpeg' => [ 'with-ffplay', 'with-openjpeg', 'with-libass', 'with-freetype', 'with-faac' ]
