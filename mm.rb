@@ -10,6 +10,7 @@ class Mm < Formula
   depends_on 'cowsay'
   depends_on 'dvdauthor'
   depends_on 'exiftool'
+  depends_on 'sdl'
   depends_on 'ffmpeg' => [ 'with-ffplay', 'with-openjpeg', 'with-libass', 'with-freetype', 'with-faac' ]
   depends_on 'flac'
   depends_on 'md5deep'
