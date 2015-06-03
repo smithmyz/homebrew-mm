@@ -30,6 +30,7 @@ class Mm < Formula
     bin.install "ingestfile"
     bin.install "makebroadcast"
     bin.install "makedvd"
+    bin.install "makeflv"
     bin.install "makeframes"
     bin.install "makelossless"
     bin.install "makemetadata"
