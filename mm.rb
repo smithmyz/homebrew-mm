@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/dericed/mediamicroservices'
-  url 'http://github.com/dericed/mediamicroservices/archive/mm_v0.7.8.zip'
-  sha256 '10752f487eb35016c6327687859b684b50229143722e741a6f2bef0b6b7f5aa2'
+  url 'http://github.com/dericed/mediamicroservices/archive/mm_v0.7.9.zip'
+  sha256 '361628fe7d9a9ce9f959f9303946b6446a0cacc0c9cd3d96ea620a132f0c7158'
   
   head 'git://github.com/dericed/mediamicroservices.git'
 
