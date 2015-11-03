@@ -38,6 +38,7 @@ class Mm < Formula
     bin.install "makepdf"
     bin.install "makepodcast"
     bin.install "makeprores"
+    bin.install "makeresourcespace"
     bin.install "makeyoutube"
     bin.install "mmconfig"
     bin.install "mmfunctions"
