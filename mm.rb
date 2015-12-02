@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v1.0.zip'
-  sha256 '145705955e978babc883136e57926bd4725d6b1029fcc1e511db94a027851b9c'
+  url 'https://github.com/mediamicroservices/mm/archive/mm_v1.0.1.zip'
+  sha256 'b2cd64da610aa4b2c9df2ca577672da0aa6b4837f1bd2a7a5e2e5f7c8749878c'
   
   head 'git://github.com/mediamicroservices/mm.git'
 
@@ -38,7 +38,9 @@ class Mm < Formula
     bin.install "makepdf"
     bin.install "makepodcast"
     bin.install "makeprores"
+    bin.install "makeqctoolsreport"
     bin.install "makeresourcespace"
+    bin.install "maketree"
     bin.install "makeyoutube"
     bin.install "mmconfig"
     bin.install "mmfunctions"
@@ -48,6 +50,7 @@ class Mm < Formula
     bin.install "restructureForCompliance"
     bin.install "tesseract.conf"
     bin.install "uploadomneon"
+    bin.install "verifytree"
     bin.install "xdcamingest"
   end
 end
