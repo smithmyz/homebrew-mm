@@ -17,6 +17,7 @@ class Mm < Formula
   depends_on 'mediainfo'
   depends_on 'normalize'
   depends_on 'xmlstarlet'
+  depends_on 'tree'
 
   def install
     bin.install "barcodeinterpret"
