@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v1.0.2.zip'
-  sha256 'a20740884d05f546a10346df2e11a9ebaf125818bc47650f17de9a532f11a5c6'
+  url 'https://github.com/mediamicroservices/mm/archive/mm_v1.0.3.zip'
+  sha256 '334de51d7cc833bff77c180e740b1f0952c235d8084a6f4cc65aa15d21b81a61'
   
   head 'git://github.com/mediamicroservices/mm.git'
 
@@ -35,6 +35,7 @@ class Mm < Formula
     bin.install "makeframes"
     bin.install "makelossless"
     bin.install "makemetadata"
+    bin.install "makemets"
     bin.install "makemp3"
     bin.install "makepdf"
     bin.install "makepodcast"
