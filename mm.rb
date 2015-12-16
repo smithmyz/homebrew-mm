@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v1.0.3.zip'
-  sha256 '334de51d7cc833bff77c180e740b1f0952c235d8084a6f4cc65aa15d21b81a61'
+  url 'https://github.com/mediamicroservices/mm/archive/mm_v1.0.4.zip'
+  sha256 '2383fdea43afd0dc97e46468d77bf4975cdec36c1b9522dfb09f979c58e8a5e5'
   
   head 'git://github.com/mediamicroservices/mm.git'
 
@@ -14,10 +14,12 @@ class Mm < Formula
   depends_on 'ffmpeg' => [ 'with-ffplay', 'with-libass', 'with-freetype', 'with-faac' ]
   depends_on 'flac'
   depends_on 'md5deep'
+  depends_on 'mediaconch'
   depends_on 'mediainfo'
   depends_on 'normalize'
-  depends_on 'xmlstarlet'
   depends_on 'tree'
+  depends_on 'xmlstarlet'
+  
 
   def install
     bin.install "barcodeinterpret"
