@@ -11,7 +11,7 @@ class Mm < Formula
   depends_on 'dvdauthor'
   depends_on 'exiftool'
   depends_on 'sdl'
-  depends_on 'ffmpeg' => [ 'with-ffplay', 'with-libass', 'with-freetype', 'with-faac' ]
+  depends_on 'ffmpeg' => [ 'with-ffplay', 'with-libass', 'with-freetype' ]
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'mediaconch'
