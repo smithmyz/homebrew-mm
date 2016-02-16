@@ -22,6 +22,7 @@ class Mm < Formula
   
 
   def install
+    bin.install "aipupgrade"
     bin.install "barcodeinterpret"
     bin.install "blackatends"
     bin.install "checksum2filemaker"
