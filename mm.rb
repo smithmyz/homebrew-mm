@@ -18,6 +18,7 @@ class Mm < Formula
   depends_on 'mediaconch'
   depends_on 'mediainfo'
   depends_on 'normalize'
+  depends_on 'homebrew/dupes/rsync'
   depends_on 'tree'
   depends_on 'xmlstarlet'
   
