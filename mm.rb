@@ -4,7 +4,7 @@ class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
   url 'https://github.com/mediamicroservices/mm/archive/mm_v1.1.6.zip'
   sha256 '118271d00c9f1b87ff8fb9ab87df02de9f1727e67e9dec5c0f8ecbd2e9c7ad21'
-  revision 1
+  revision 2
   
   head 'git://github.com/mediamicroservices/mm.git'
 
@@ -50,7 +50,7 @@ class Mm < Formula
     bin.install "makeslate"
     bin.install "maketree"
     bin.install "makeyoutube"
-    bin.install "migrateaip"
+    bin.install "migratefiles"
     bin.install "mmconfig"
     bin.install "mmfunctions"
     bin.install "paperingest"
