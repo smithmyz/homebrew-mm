@@ -47,7 +47,6 @@ class Mm < Formula
     bin.install "makeqctoolsreport"
     bin.install "makeresourcespace"
     bin.install "makeslate"
-    bin.install "maketree"
     bin.install "makeyoutube"
     bin.install "migratefiles"
     bin.install "mmconfig"
