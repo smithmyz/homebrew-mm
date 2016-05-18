@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.0.3.zip'
-  sha256 'c1f09762a353f1b225fe765b6ad6b996f47b87a2c020b527e5396bb4b22be0b1'
+  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.0.4.zip'
+  sha256 '9cf6e38b2cd9e08dd828c957f6e8bc6239f6076a3ba0cd91777bb4ecb3752f01'
   
   head 'git://github.com/mediamicroservices/mm.git'
 
@@ -47,6 +47,7 @@ class Mm < Formula
     bin.install "makeqctoolsreport"
     bin.install "makeresourcespace"
     bin.install "makeslate"
+    bin.install "makewaveform"
     bin.install "makeyoutube"
     bin.install "migratefiles"
     bin.install "mmconfig"
