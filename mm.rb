@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.0.6.zip'
-  sha256 'b12fe8156e1db5c3c5df1fdaa2efcee2d097d90ba266e6f04498584641c89d78'
+  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.0.7.zip'
+  sha256 '9a571ed1f0703cca638bc5dc9ec8a58ffda57c6ebc445bc967d5f8b813e88652'
   
   head 'git://github.com/mediamicroservices/mm.git'
 
@@ -53,6 +53,7 @@ class Mm < Formula
     bin.install "mmconfig"
     bin.install "mmfunctions"
     bin.install "paperingest"
+    bin.install "phasecheck"
     bin.install "quickcompare"
     bin.install "removeDSStore"
     bin.install "restructureForCompliance"
