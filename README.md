@@ -4,4 +4,4 @@ Some brew formulas to support installing scripts from the dericed/mediamicroserv
 
 How to install this stuff?
 --------------------------
-To tap these formulas in homebrew please run `brew tap dericed/mm` and the run `brew install mm`.
+To tap these formulas in homebrew please run `brew tap mediamicroservices/mm` and the run `brew install mm`.
