@@ -5,9 +5,10 @@ class Mm < Formula
   url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.1.zip'
   sha256 '6fe5b1f5a9f719c89324ef14fb80fa0187742f93dd64479574c0311a25fe059d'
   head 'git://github.com/mediamicroservices/mm.git'
-  revision 1
+  revision 2
 
   depends_on 'cowsay'
+  depends_on 'dvdrtools'
   depends_on 'dvdauthor'
   depends_on 'exiftool'
   depends_on 'sdl'
