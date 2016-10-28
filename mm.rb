@@ -5,7 +5,7 @@ class Mm < Formula
   url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.1.zip'
   sha256 '6fe5b1f5a9f719c89324ef14fb80fa0187742f93dd64479574c0311a25fe059d'
   head 'git://github.com/mediamicroservices/mm.git'
-  revision 2
+  revision 3
 
   depends_on 'cowsay'
   depends_on 'dvdrtools'
@@ -30,6 +30,7 @@ class Mm < Formula
     bin.install "checksum2filemaker"
     bin.install "checksumpackage"
     bin.install "createpremisdb"
+    bin.install "dbbackup"
     bin.install "finishpackage"
     bin.install "fix_left2stereo"
     bin.install "fix_rewrap"
@@ -67,4 +68,39 @@ class Mm < Formula
     bin.install "verifytree"
     bin.install "xdcamingest"
   end
+  
+      def caveats; <<-EOS.undent
+    If using PREMIS DB, backup can be controlled via included plist file. This is configured to run daily backups at 2:00AM if activated. 
+    EOS
+  end
+  
+  def plist; <<-EOS.undent
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+      <dict>
+        <key>Label</key>
+        <string>#{plist_name}</string>
+        <key>OnDemand</key>
+        <true/>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>StartCalendarInterval</key>
+        <dict>
+          <key>Hour</key>
+          <integer>02</integer>
+          <key>Minute</key>
+          <integer>00</integer>
+        </dict>
+        <key>ProgramArguments</key>
+        <array>
+            <string>#{bin}/dbbackup</string>
+        </array>
+        <key>WorkingDirectory</key>
+        <string>#{HOMEBREW_PREFIX}</string>
+      </dict>
+    </plist>
+    EOS
+  end
+end
 end
