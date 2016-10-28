@@ -102,4 +102,3 @@ class Mm < Formula
     EOS
   end
 end
-end
