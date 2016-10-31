@@ -5,13 +5,14 @@ class Mm < Formula
   url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.2.zip'
   sha256 'cfe502eae55bafa24a43a5c0da1be376e6a42e388d4db5a86e051a0e14d1bcb7'
   head 'git://github.com/mediamicroservices/mm.git'
-
+  revision 1
+  
   depends_on 'cowsay'
   depends_on 'dvdrtools'
   depends_on 'dvdauthor'
   depends_on 'exiftool'
   depends_on 'sdl'
-  depends_on 'ffmpeg' => [ 'with-sdl', 'with-freetype' ]
+  depends_on 'ffmpeg' => [ 'with-sdl2', 'with-freetype' ]
   depends_on 'flac'
   depends_on 'md5deep'
   depends_on 'mediaconch'
