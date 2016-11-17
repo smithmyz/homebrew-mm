@@ -70,7 +70,7 @@ class Mm < Formula
   end
   
       def caveats; <<-EOS.undent
-    If using PREMIS DB, backup can be controlled via included plist file. This is configured to run daily backups at 2:00AM if activated. 
+    If using the PREMIS DB reporting feature of mm, backup can be controlled via included plist file. Backup only needs to be activated/configured on the DB host computer. Included plist file will run daily backups at 2:00AM if activated.
     EOS
   end
   
