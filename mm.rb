@@ -5,7 +5,7 @@ class Mm < Formula
   url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.5.zip'
   sha256 '01ff5d6e69fddc8e859533dd41560f90efff767a2a7c320701feaefe668c4a40'
   head 'git://github.com/mediamicroservices/mm.git'
-  revision 2
+  revision 3
   
   depends_on 'cowsay'
   depends_on 'dvdrtools'
@@ -71,7 +71,7 @@ class Mm < Formula
   end
   
   def post_install;
-      system `echo updateplist`
+      system "updateplist"
   end
   
       def caveats; <<-EOS.undent
