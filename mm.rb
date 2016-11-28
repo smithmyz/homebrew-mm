@@ -5,6 +5,7 @@ class Mm < Formula
   url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.5.zip'
   sha256 '01ff5d6e69fddc8e859533dd41560f90efff767a2a7c320701feaefe668c4a40'
   head 'git://github.com/mediamicroservices/mm.git'
+  revision 1
   
   depends_on 'cowsay'
   depends_on 'dvdrtools'
@@ -63,6 +64,7 @@ class Mm < Formula
     bin.install "removeDSStore"
     bin.install "restructureForCompliance"
     bin.install "tesseract.conf"
+    bin.install "updateplist"
     bin.install "uploadomneon"
     bin.install "verifytree"
     bin.install "xdcamingest"
