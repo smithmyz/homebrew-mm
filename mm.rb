@@ -2,10 +2,9 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.5.zip'
-  sha256 '01ff5d6e69fddc8e859533dd41560f90efff767a2a7c320701feaefe668c4a40'
+  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.6.zip'
+  sha256 'ab5c01f48fc6f4b71b15cc0849d844735ce06035336ae840709bf842595e7a44'
   head 'git://github.com/mediamicroservices/mm.git'
-  revision 3
   
   depends_on 'cowsay'
   depends_on 'dvdrtools'
