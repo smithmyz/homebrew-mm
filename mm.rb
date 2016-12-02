@@ -2,8 +2,8 @@ require 'formula'
 
 class Mm < Formula
   homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.7.zip'
-  sha256 '3e84d8991bbcef8dbd637aa2648b41daf2097807d58f928d5a17c1a800f27554'
+  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.1.8.zip'
+  sha256 '978d7fefc1359bca2d449378690568a600caf5bbfdbc16cbbdef8e4ec494413b'
   head 'git://github.com/mediamicroservices/mm.git'
   
   depends_on 'cowsay'
@@ -16,7 +16,6 @@ class Mm < Formula
   depends_on 'md5deep'
   depends_on 'mediaconch'
   depends_on 'mediainfo'
-  depends_on 'normalize'
   depends_on 'homebrew/dupes/rsync'
   depends_on 'tree'
   depends_on 'xmlstarlet'
@@ -63,14 +62,14 @@ class Mm < Formula
     bin.install "removeDSStore"
     bin.install "restructureForCompliance"
     bin.install "tesseract.conf"
-    bin.install "updateplist"
+    bin.install "updatingplist"
     bin.install "uploadomneon"
     bin.install "verifytree"
     bin.install "xdcamingest"
   end
   
   def post_install;
-      system "updateplist"
+      system "updatingplist"
   end
   
       def caveats; <<-EOS.undent
