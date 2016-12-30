@@ -1,25 +1,22 @@
-require 'formula'
-
 class Mm < Formula
-  homepage 'http://github.com/mediamicroservices/mm'
-  url 'https://github.com/mediamicroservices/mm/archive/mm_v2.2.tar.gz'
-  sha256 '27ea7361d38858a46a048ca34c803254f057d92687d37b215e86002297ef343d'
-  head 'git://github.com/mediamicroservices/mm.git'
-  
-  depends_on 'cowsay'
-  depends_on 'dvdrtools'
-  depends_on 'dvdauthor'
-  depends_on 'exiftool'
-  depends_on 'sdl'
-  depends_on 'ffmpeg' => [ 'with-sdl2', 'with-freetype' ]
-  depends_on 'flac'
-  depends_on 'md5deep'
-  depends_on 'mediaconch'
-  depends_on 'mediainfo'
-  depends_on 'homebrew/dupes/rsync'
-  depends_on 'tree'
-  depends_on 'xmlstarlet'
-  
+  homepage "https://github.com/mediamicroservices/mm"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.tar.gz"
+  sha256 "27ea7361d38858a46a048ca34c803254f057d92687d37b215e86002297ef343d"
+  head "https://github.com/mediamicroservices/mm.git"
+
+  depends_on "cowsay"
+  depends_on "dvdrtools"
+  depends_on "dvdauthor"
+  depends_on "exiftool"
+  depends_on "sdl"
+  depends_on "ffmpeg" => ["with-sdl2", "with-freetype"]
+  depends_on "flac"
+  depends_on "md5deep"
+  depends_on "mediaconch"
+  depends_on "media-info"
+  depends_on "homebrew/dupes/rsync"
+  depends_on "tree"
+  depends_on "xmlstarlet"
 
   def install
     bin.install "aipupgrade"
@@ -67,16 +64,16 @@ class Mm < Formula
     bin.install "verifytree"
     bin.install "xdcamingest"
   end
-  
-  def post_install;
-      system "updatingplist"
+
+  def post_install
+    system "updatingplist"
   end
-  
-      def caveats; <<-EOS.undent
+
+  def caveats; <<-EOS.undent
     If using the PREMIS DB reporting feature of mm, backup can be controlled via included plist file. Backup only needs to be activated/configured on the DB host computer. Included plist file will run daily backups at 2:00AM if activated.
     EOS
   end
-  
+
   def plist; <<-EOS.undent
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
