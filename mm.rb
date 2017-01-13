@@ -1,7 +1,7 @@
 class Mm < Formula
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.2.tar.gz"
-  sha256 "70b83a1b34b227497d375876daef8a8e75c3026a0309ed78622e2f1025c58473"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.3.tar.gz"
+  sha256 "37dce47f0045dc5577b90be3a87c8206f08aab60f7bdc2e11b1f9331126a1902"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "cowsay"
@@ -29,6 +29,7 @@ class Mm < Formula
     bin.install "finishpackage"
     bin.install "fix_left2stereo"
     bin.install "fix_rewrap"
+    bin.install "fix_timecode"
     bin.install "fix_volume"
     bin.install "ingestfile"
     bin.install "makebroadcast"
