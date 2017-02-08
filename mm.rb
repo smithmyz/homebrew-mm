@@ -1,7 +1,7 @@
 class Mm < Formula
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.4.tar.gz"
-  sha256 "d989660721c7b7ff6d865f00bb4fb15150b20c98a787e4f8aeeee2d600b501bb"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.5.tar.gz"
+  sha256 "b33a0ebe99beac0d6c8ca342727d4585260349461ebc09114d4f2b4c0dfc6107"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "cowsay"
