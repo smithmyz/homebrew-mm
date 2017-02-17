@@ -3,6 +3,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.7.tar.gz"
   sha256 "d1b7e6903801b8045ea3f271bc8d42a33897f8a43696dce13ac6bbab06138127"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   depends_on "dvdrtools"
@@ -39,6 +40,7 @@ class Mm < Formula
     bin.install "makelossless"
     bin.install "makemetadata"
     bin.install "makemets"
+    bin.install "makemkvchapters"
     bin.install "makemp3"
     bin.install "makepdf"
     bin.install "makepodcast"
