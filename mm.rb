@@ -1,7 +1,7 @@
 class Mm < Formula
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.11.tar.gz"
-  sha256 "195a65bebad56f7c0be5d5ef80bcaab6efd7e9c598fe37684e73d4e0e95cacbb"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.12.tar.gz"
+  sha256 "3882e283cc140224d54f200e59fadbb688e06f5e92d456202c8666370c5126ef"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "cowsay"
@@ -36,6 +36,7 @@ class Mm < Formula
     bin.install "makedvd"
     bin.install "makeflv"
     bin.install "makeframes"
+    bin.install "makegifsummary"
     bin.install "makelossless"
     bin.install "makemetadata"
     bin.install "makemets"
