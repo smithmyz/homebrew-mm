@@ -1,9 +1,8 @@
 class Mm < Formula
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.12.tar.gz"
-  sha256 "3882e283cc140224d54f200e59fadbb688e06f5e92d456202c8666370c5126ef"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.13.tar.gz"
+  sha256 "43d16cbead50d977c12433e0a053e058c5ee630c5a23129af3436dac82e1a2f7"
   head "https://github.com/mediamicroservices/mm.git"
-  revision 1
 
   depends_on "cowsay"
   depends_on "dvdrtools"
