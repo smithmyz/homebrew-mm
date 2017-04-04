@@ -3,6 +3,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.13.tar.gz"
   sha256 "43d16cbead50d977c12433e0a053e058c5ee630c5a23129af3436dac82e1a2f7"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   depends_on "dvdrtools"
@@ -14,7 +15,7 @@ class Mm < Formula
   depends_on "hashdeep"
   depends_on "mediaconch"
   depends_on "media-info"
-  depends_on "homebrew/dupes/rsync"
+  depends_on "rsync"
   depends_on "tree"
   depends_on "xmlstarlet"
 
