@@ -6,6 +6,8 @@ class Mm < Formula
   revision 1
 
   depends_on "cowsay"
+  # Note: Only `makedvd` uses `mkisofs` which is part of `dvdrtools`.
+  # TO DO: Is there a Linuxbrew source for `mkisofs`? Maybe in `cdrtools`?
   depends_on "dvdrtools" if OS.mac?
   depends_on "dvdauthor"
   depends_on "exiftool"
