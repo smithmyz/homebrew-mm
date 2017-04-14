@@ -5,9 +5,10 @@ class Mm < Formula
   head "https://github.com/mediamicroservices/mm.git"
   revision 1
 
+  # cdrtools is a Linuxbrew replacement for dvdtools
+  depends_on "cdrtools" unless OS.mac?
   depends_on "cowsay"
-  # Note: Only `makedvd` uses `mkisofs` which is part of `dvdrtools`.
-  # TO DO: Is there a Linuxbrew source for `mkisofs`? Maybe in `cdrtools`?
+  # dvdtools is available only on Homebrew
   depends_on "dvdrtools" if OS.mac?
   depends_on "dvdauthor"
   depends_on "exiftool"
