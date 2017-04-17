@@ -3,6 +3,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.15.tar.gz"
   sha256 "c02740264d3bde1ff618605a9edbd4079be9d5d475ce14e58050e2f5ec173ea6"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   depends_on "dvdrtools"
@@ -62,6 +63,7 @@ class Mm < Formula
     bin.install "quickcompare"
     bin.install "removeDSStore"
     bin.install "restructureForCompliance"
+    bin.install "searchfingerprint"
     bin.install "tesseract.conf"
     bin.install "updatingplist"
     bin.install "uploadomneon"
