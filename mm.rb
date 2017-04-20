@@ -101,7 +101,7 @@ class Mm < Formula
         </dict>
         <key>ProgramArguments</key>
         <array>
-            <string>#{bin}/dbbackup</string>
+          <string>#{bin}/dbbackup</string>
         </array>
         <key>WorkingDirectory</key>
         <string>#{HOMEBREW_PREFIX}</string>
