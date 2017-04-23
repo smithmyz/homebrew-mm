@@ -5,11 +5,12 @@ class Mm < Formula
   head "https://github.com/mediamicroservices/mm.git"
   revision 1
 
-  # cdrtools is a Linuxbrew replacement for dvdtools
-  depends_on "cdrtools" unless OS.mac?
   depends_on "cowsay"
-  # dvdtools is available only on Homebrew
-  depends_on "dvdrtools" if OS.mac?
+  if OS.mac?
+    depends_on "dvdrtools"
+  else
+    depends_on "cdrtools"
+  end
   depends_on "dvdauthor"
   depends_on "exiftool"
   depends_on "sdl"
