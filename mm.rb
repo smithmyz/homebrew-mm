@@ -6,7 +6,11 @@ class Mm < Formula
   revision 1
 
   depends_on "cowsay"
-  depends_on "dvdrtools"
+  if OS.mac?
+    depends_on "dvdrtools"
+  else
+    depends_on "cdrtools"
+  end
   depends_on "dvdauthor"
   depends_on "exiftool"
   depends_on "sdl"
@@ -104,7 +108,7 @@ class Mm < Formula
         </dict>
         <key>ProgramArguments</key>
         <array>
-            <string>#{bin}/dbbackup</string>
+          <string>#{bin}/dbbackup</string>
         </array>
         <key>WorkingDirectory</key>
         <string>#{HOMEBREW_PREFIX}</string>
