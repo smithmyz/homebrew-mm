@@ -3,6 +3,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.16.tar.gz"
   sha256 "e1d15e2d39b959e804f604a41a75e010accfe44c12dec2983527d9fbfa244560"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   if OS.mac?
@@ -28,7 +29,7 @@ class Mm < Formula
     bin.install "blackatends"
     bin.install "checksum2filemaker"
     bin.install "checksumpackage"
-    bin.install "createpremisdb"
+    bin.install "createmmdb"
     bin.install "dbbackup"
     bin.install "finishpackage"
     bin.install "fix_left2stereo"
