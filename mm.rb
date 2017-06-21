@@ -1,9 +1,8 @@
 class Mm < Formula
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.15.tar.gz"
-  sha256 "c02740264d3bde1ff618605a9edbd4079be9d5d475ce14e58050e2f5ec173ea6"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.2.16.tar.gz"
+  sha256 "e1d15e2d39b959e804f604a41a75e010accfe44c12dec2983527d9fbfa244560"
   head "https://github.com/mediamicroservices/mm.git"
-  revision 1
 
   depends_on "cowsay"
   if OS.mac?
@@ -14,7 +13,7 @@ class Mm < Formula
   depends_on "dvdauthor"
   depends_on "exiftool"
   depends_on "sdl"
-  depends_on "ffmpeg" => ["with-sdl2", "with-freetype", "with-libebur128"]
+  depends_on "ffmpeg" => ["with-sdl2", "with-freetype"]
   depends_on "flac"
   depends_on "hashdeep"
   depends_on "mediaconch"
