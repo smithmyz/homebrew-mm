@@ -1,7 +1,7 @@
 class Mm < Formula
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.3.1.tar.gz"
-  sha256 "4e6712db91443e0095100900cd9ba936d10300e0aed2df0f673d2ae150f9120b"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.tar.gz"
+  sha256 "4b96fd77178ab1d57d6a00376783367c78c410c7faee3d4394a0937320e61c37"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "cowsay"
@@ -38,6 +38,7 @@ class Mm < Formula
     bin.install "ingestfile"
     bin.install "makebroadcast"
     bin.install "makebroadcast_policies.xml"
+    bin.install "makederiv"
     bin.install "makedvd"
     bin.install "makedvd_policies.xml"
     bin.install "makefingerprint"
@@ -62,6 +63,7 @@ class Mm < Formula
     bin.install "mm-desktop-setup"
     bin.install "mmconfig"
     bin.install "mmfunctions"
+    bin.install "mmtest"
     bin.install "mmupdate"
     bin.install "paperingest"
     bin.install "phasecheck"
