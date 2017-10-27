@@ -3,6 +3,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.1.tar.gz"
   sha256 "6bb6a5d675882e160f5f0bf0891d207335856041cbe0f388c42d0f9848d6491f"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   if OS.mac?
@@ -55,7 +56,6 @@ class Mm < Formula
     bin.install "makeprores"
     bin.install "makeqctoolsreport"
     bin.install "makeresourcespace"
-    bin.install "makeslate"
     bin.install "makewaveform"
     bin.install "makeyoutube"
     bin.install "makeyoutube_policies.xml"
