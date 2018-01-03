@@ -56,7 +56,6 @@ class Mm < Formula
     bin.install "makeprores"
     bin.install "makeqctoolsreport"
     bin.install "makeresourcespace"
-    bin.install "makeslate"
     bin.install "makewaveform"
     bin.install "makeyoutube"
     bin.install "makeyoutube_policies.xml"
