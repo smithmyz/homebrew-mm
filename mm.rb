@@ -1,8 +1,8 @@
 class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.1.tar.gz"
-  sha256 "6bb6a5d675882e160f5f0bf0891d207335856041cbe0f388c42d0f9848d6491f"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.2.tar.gz"
+  sha256 "4bf27254fbe32fbe8fcd8cd175d1f999d069697abf2338ce453a7f7a0b971c06"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "cowsay"
@@ -16,6 +16,7 @@ class Mm < Formula
   depends_on "sdl"
   depends_on "ffmpeg" => ["with-sdl2", "with-freetype"]
   depends_on "flac"
+  depends_on "gnumeric"
   depends_on "hashdeep"
   depends_on "mediaconch"
   depends_on "media-info"
