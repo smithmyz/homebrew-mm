@@ -4,6 +4,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.3.tar.gz"
   sha256 "0236245e733c22b582f1082b5f8f2b88f5497671aff46549b349a0b951ebd853"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   if OS.mac?
@@ -86,12 +87,12 @@ class Mm < Formula
     system "updatingplist"
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS.undent
     If using the PREMIS DB reporting feature of mm, backup can be controlled via included plist file. Backup only needs to be activated/configured on the DB host computer. Included plist file will run daily backups at 2:00AM if activated.
     EOS
   end
 
-  def plist; <<-EOS.undent
+  def plist; <<~EOS.undent
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
