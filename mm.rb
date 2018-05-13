@@ -3,8 +3,8 @@ class Mm < Formula
   homepage "https://github.com/mediamicroservices/mm"
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.4.tar.gz"
   sha256 "bfc18737490604d1e20570b2f0831222dd63cec1a4dcf60cc96983173a1f7dd9"
-  head "https://github.com/mediamicroservices/mm.git"
   revision 2
+  head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "cowsay"
   if OS.mac?
@@ -18,7 +18,7 @@ class Mm < Formula
   depends_on "ffmpeg" => ["with-sdl2", "with-freetype"]
   depends_on "flac"
   depends_on "gnumeric"
-  depends_on "hashdeep"
+  depends_on "md5deep"
   depends_on "mediaconch"
   depends_on "media-info"
   depends_on "rsync"
