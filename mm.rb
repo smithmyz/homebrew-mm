@@ -4,6 +4,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.5.tar.gz"
   sha256 "b2f97d8b7b95fb911063990f140a452c5331e059a90c99a211d2b0bf3e26d6c9"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   if OS.mac?
@@ -21,6 +22,7 @@ class Mm < Formula
   depends_on "mediaconch"
   depends_on "media-info"
   depends_on "rsync"
+  depends_on "tnftp"
   depends_on "tree"
   depends_on "xmlstarlet"
 
