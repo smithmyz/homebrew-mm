@@ -28,6 +28,7 @@ class Mm < Formula
 
   def install
     bin.install "aipupgrade"
+    bin.install "audiotest"
     bin.install "barcodeinterpret"
     bin.install "blackatends"
     bin.install "checksum2filemaker"
@@ -40,6 +41,7 @@ class Mm < Formula
     bin.install "fix_timecode"
     bin.install "fix_volume"
     bin.install "ingestfile"
+    bin.install "makeaudiographs"
     bin.install "makebroadcast"
     bin.install "makebroadcast_policies.xml"
     bin.install "makederiv"
