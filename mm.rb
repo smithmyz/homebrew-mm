@@ -1,10 +1,9 @@
 class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.6.tar.gz"
-  sha256 "7c788f7c902452cb8e4d3c4b205f55e758b3c326481fe7301fd0c5d4c7735297"
+  url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.7.tar.gz"
+  sha256 "3e98e5d374d344d2605bb55fec539a45d73b3a074af730dc85e1466ccbea0897"
   head "https://github.com/mediamicroservices/mm.git"
- 
 
   depends_on "cowsay"
   if OS.mac?
