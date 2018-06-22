@@ -4,6 +4,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.4.7.tar.gz"
   sha256 "3e98e5d374d344d2605bb55fec539a45d73b3a074af730dc85e1466ccbea0897"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   if OS.mac?
@@ -69,6 +70,7 @@ class Mm < Formula
     bin.install "mmfunctions"
     bin.install "mmtest"
     bin.install "mmupdate"
+    bin.install "object_policies.xml"
     bin.install "paperingest"
     bin.install "phasecheck"
     bin.install "qatesting"
