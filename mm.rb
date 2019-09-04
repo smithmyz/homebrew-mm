@@ -4,6 +4,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/mm_v2.5.3.tar.gz"
   sha256 "2eb00772fc2591e98c26f9fcf92e03e7f4f2f024975a52c7806a91923a92aeea"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "cowsay"
   if OS.mac?
@@ -78,7 +79,6 @@ class Mm < Formula
     bin.install "restructureForCompliance"
     bin.install "rewrapmxf"
     bin.install "searchfingerprint"
-    bin.install "tesseract.conf"
     bin.install "updatingplist"
     bin.install "uploadomneon"
     bin.install "verifypackage"
