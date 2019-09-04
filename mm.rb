@@ -78,7 +78,6 @@ class Mm < Formula
     bin.install "restructureForCompliance"
     bin.install "rewrapmxf"
     bin.install "searchfingerprint"
-    bin.install "tesseract.conf"
     bin.install "updatingplist"
     bin.install "uploadomneon"
     bin.install "verifypackage"
